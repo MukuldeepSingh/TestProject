@@ -1,30 +1,80 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-05-23T01:01:53 EDT" name="Default suite" finished-at="2021-05-23T01:01:57 EDT" duration-ms="4539">
+  <suite started-at="2021-05-23T23:33:11 EDT" name="Default suite" finished-at="2021-05-23T23:33:47 EDT" duration-ms="36523">
     <groups>
     </groups>
-    <test started-at="2021-05-23T01:01:53 EDT" name="Default test" finished-at="2021-05-23T01:01:57 EDT" duration-ms="4539">
-      <class name="com.mmt.qa.testCases.HomePageTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.mmt.qa.testCases.HomePageTest@209da20d]" started-at="2021-05-23T01:01:53 EDT" name="setup" finished-at="2021-05-23T01:01:57 EDT" duration-ms="4318" status="PASS">
+    <test started-at="2021-05-23T23:33:11 EDT" name="Default test" finished-at="2021-05-23T23:33:47 EDT" duration-ms="36523">
+      <class name="com.mmt.qa.testCases.FlightsPageTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.mmt.qa.testCases.FlightsPageTest@1b2abca6]" started-at="2021-05-23T23:33:11 EDT" name="setup" finished-at="2021-05-23T23:33:15 EDT" duration-ms="4377" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="validate_header_elements_test()[pri:0, instance:com.mmt.qa.testCases.HomePageTest@209da20d]" started-at="2021-05-23T01:01:57 EDT" name="validate_header_elements_test" finished-at="2021-05-23T01:01:57 EDT" duration-ms="190" status="FAIL">
-          <exception class="java.lang.AssertionError">
+        <test-method signature="click_btn_login_test()[pri:1, instance:com.mmt.qa.testCases.FlightsPageTest@1b2abca6]" started-at="2021-05-23T23:33:15 EDT" name="click_btn_login_test" finished-at="2021-05-23T23:33:25 EDT" duration-ms="10005" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- click_btn_login_test -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.mmt.qa.testCases.FlightsPageTest@1b2abca6]" started-at="2021-05-23T23:33:25 EDT" name="teardown" finished-at="2021-05-23T23:33:29 EDT" duration-ms="4193" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.mmt.qa.testCases.FlightsPageTest@1b2abca6]" started-at="2021-05-23T23:33:29 EDT" name="setup" finished-at="2021-05-23T23:33:33 EDT" duration-ms="3685" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verify_flights_title_test()[pri:2, instance:com.mmt.qa.testCases.FlightsPageTest@1b2abca6]" started-at="2021-05-23T23:33:33 EDT" name="verify_flights_title_test" finished-at="2021-05-23T23:33:33 EDT" duration-ms="321" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_flights_title_test -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.mmt.qa.testCases.FlightsPageTest@1b2abca6]" started-at="2021-05-23T23:33:33 EDT" name="teardown" finished-at="2021-05-23T23:33:38 EDT" duration-ms="4151" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.mmt.qa.testCases.FlightsPageTest@1b2abca6]" started-at="2021-05-23T23:33:38 EDT" name="setup" finished-at="2021-05-23T23:33:41 EDT" duration-ms="3356" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="from_City_selection_test()[pri:3, instance:com.mmt.qa.testCases.FlightsPageTest@1b2abca6]" started-at="2021-05-23T23:33:41 EDT" name="from_City_selection_test" finished-at="2021-05-23T23:33:43 EDT" duration-ms="2234" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
             <message>
-              <![CDATA[expected [Flights, Hotels, Villas & Apts, Holidays, Trains, Buses, Visa, Cabs, Charter Flights] but found [[Flights, Hotels, Villas & Apts, Holidays, Trains, Buses, Visa, Cabs, Charter Flights]]]]>
+              <![CDATA[element click intercepted: Element <span class="lbl_input latoBold  appendBottom5">...</span> is not clickable at point (329, 222). Other element would receive the click: <div data-cy="outsideModal" class="loginModal displayBlock modalLogin dynHeight personal "></div>
+  (Session info: chrome=90.0.4430.212)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-8RL1USP', ip: '192.168.2.117', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.212, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\ambri\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63842}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 945c7bb72afc1b5350e3888743dcb4b5]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Flights, Hotels, Villas & Apts, Holidays, Trains, Buses, Visa, Cabs, Charter Flights] but found [[Flights, Hotels, Villas & Apts, Holidays, Trains, Buses, Visa, Cabs, Charter Flights]]
-at org.testng.Assert.fail(Assert.java:99)
-at org.testng.Assert.failNotEquals(Assert.java:1037)
-at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-at org.testng.Assert.assertEquals(Assert.java:122)
-at org.testng.Assert.assertEquals(Assert.java:629)
-at org.testng.Assert.assertEquals(Assert.java:639)
-at com.mmt.qa.testCases.HomePageTest.validate_header_elements_test(HomePageTest.java:29)
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span class="lbl_input latoBold  appendBottom5">...</span> is not clickable at point (329, 222). Other element would receive the click: <div data-cy="outsideModal" class="loginModal displayBlock modalLogin dynHeight personal "></div>
+  (Session info: chrome=90.0.4430.212)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-8RL1USP', ip: '192.168.2.117', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.212, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\ambri\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63842}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 945c7bb72afc1b5350e3888743dcb4b5
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at com.sun.proxy.$Proxy12.click(Unknown Source)
+at com.mmt.qa.pages.FlightsPage.from_City_selection(FlightsPage.java:42)
+at com.mmt.qa.testCases.FlightsPageTest.from_City_selection_test(FlightsPageTest.java:49)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -55,11 +105,15 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validate_header_elements_test -->
-      </class> <!-- com.mmt.qa.testCases.HomePageTest -->
+        </test-method> <!-- from_City_selection_test -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.mmt.qa.testCases.FlightsPageTest@1b2abca6]" started-at="2021-05-23T23:33:43 EDT" name="teardown" finished-at="2021-05-23T23:33:47 EDT" duration-ms="4163" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.mmt.qa.testCases.FlightsPageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
