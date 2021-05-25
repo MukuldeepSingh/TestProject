@@ -1,9 +1,5 @@
 package com.mmt.qa.testCases;
 
-import static org.testng.Assert.assertEquals;
-
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -18,10 +14,10 @@ class FlightsPageTest extends BaseClass{
 
 	FlightsPage fp;
 	HomePage hp;
-	Logger l= Logger.getLogger(FlightsPageTest.class);
-	
+			
 	@BeforeMethod 
 	public void setup() {
+	//	l1.info("****************************** Starting test cases execution  *****************************************");
 		initialize_driver();
 		hp= new HomePage();
 		fp= new FlightsPage();
@@ -39,6 +35,7 @@ class FlightsPageTest extends BaseClass{
 	public void verify_flights_title_test() {
 		//fp=hp.click_flights();
 		hp.click_flights();
+		
 		String fp_Title= fp.verify_flights_title();
 		Assert.assertEquals(fp_Title, "Flight Booking, Flight Tickets Booking at Lowest Airfare | MakeMyTrip", "The Title of Flights Page does not match");
 	}

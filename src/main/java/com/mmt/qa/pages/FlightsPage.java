@@ -2,11 +2,8 @@ package com.mmt.qa.pages;
 
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.Select;
-
 import com.mmt.qa.base.BaseClass;
 
 public class FlightsPage extends BaseClass {   // error says = add constructor coz exception at Base class, default constructor cant handle exception so we need to create a no arg const

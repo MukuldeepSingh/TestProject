@@ -65,16 +65,16 @@ public class HomePage extends BaseClass {
 		return btn_currency.getText();
 	}
 	
-	public String validate_header_elements() {
+	public List<String> validate_header_elements() {
 		List<String> al= new ArrayList<String>();
 		for (WebElement e:header_elements) {
 			al.add(e.getText().toString());
 		}
-		String s1=al.toString();
+		
 		System.out.println(al.toString());
 		
 		//return al.toString();
-		return s1;
+		return al;
 	}
 	
 }

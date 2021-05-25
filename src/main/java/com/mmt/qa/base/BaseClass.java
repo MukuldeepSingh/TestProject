@@ -20,7 +20,7 @@ public class BaseClass {
 	{
 		try {
 		prop=new Properties();
-		FileInputStream fip=new FileInputStream("C:\\Users\\ambri\\eclipse-workspace\\mmt\\src\\main\\java\\com\\mmt\\qa\\config\\config.properties");
+		FileInputStream fip=new FileInputStream("C:\\Users\\10294465\\git\\mmt\\src\\main\\java\\com\\mmt\\qa\\config\\config.properties");
 		prop.load(fip);	}
 		
 		catch (Exception e) {

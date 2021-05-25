@@ -3,13 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.mmt.qa.testCases.FlightsPageTest">
+      <class name="com.mmt.qa.testCases.HomePageTest">
         <methods>
-          <include name="from_City_selection_test"/>
-          <include name="teardown"/>
           <include name="setup"/>
+          <include name="validate_header_elements_test"/>
         </methods>
-      </class> <!-- com.mmt.qa.testCases.FlightsPageTest -->
+      </class> <!-- com.mmt.qa.testCases.HomePageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
