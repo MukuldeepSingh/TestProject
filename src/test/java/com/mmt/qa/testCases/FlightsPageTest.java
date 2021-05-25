@@ -14,10 +14,10 @@ class FlightsPageTest extends BaseClass{
 
 	FlightsPage fp;
 	HomePage hp;
+	
 			
 	@BeforeMethod 
 	public void setup() {
-	//	l1.info("****************************** Starting test cases execution  *****************************************");
 		initialize_driver();
 		hp= new HomePage();
 		fp= new FlightsPage();

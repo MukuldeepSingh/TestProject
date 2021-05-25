@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
+import org.apache.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -18,6 +19,7 @@ public class HomePageTest extends BaseClass{
 	HomePage hp;
 	ExcelReadUtil er;
 
+	Logger l1=Logger.getLogger(HomePageTest.class);
 
 	@BeforeMethod 
 	public void setup() {
@@ -28,6 +30,7 @@ public class HomePageTest extends BaseClass{
 
 	@Test
 	public void validate_header_elements_test() {
+		l1.info("****************************** Starting test cases execution  *****************************************");
 		hp.click_btn_currency();
 		List<String> al1=hp.validate_header_elements();
 		StringBuilder strbl=new StringBuilder();
