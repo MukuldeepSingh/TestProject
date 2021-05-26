@@ -73,7 +73,6 @@ public class HomePage extends BaseClass {
 		
 		System.out.println(al.toString());
 		
-		//return al.toString();
 		return al;
 	}
 	
