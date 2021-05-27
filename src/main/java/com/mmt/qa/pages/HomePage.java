@@ -70,9 +70,7 @@ public class HomePage extends BaseClass {
 		for (WebElement e:header_elements) {
 			al.add(e.getText().toString());
 		}
-		
 		System.out.println(al.toString());
-		
 		return al;
 	}
 	
