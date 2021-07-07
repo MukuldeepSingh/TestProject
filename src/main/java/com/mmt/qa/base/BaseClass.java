@@ -13,7 +13,8 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BaseClass {
 	public static WebDriver driver;		//as no need to create object
-	public static Properties prop;			//config.properties= used to store envt variables 
+	public static Properties prop;		
+	//config.properties= used to store envt variables 
 	
 	
 	public BaseClass() 		// why we need cont = pre requisite , why public= to make this accessible everywhere
